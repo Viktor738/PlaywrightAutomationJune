@@ -1,7 +1,7 @@
 import {chromium, test as it} from '@playwright/test';
 
 it.describe('HW FORM PAGE TYPE', () => {
-    it.skip('Fill all fields', async ({page}) => {
+    it('Fill all fields', async ({page}) => {
         await page.goto("https://testpages.eviltester.com/styled/basic-html-form-test.html")
         //await page.pause()
         await page.locator('[name="username"]').fill('Nick')
@@ -18,7 +18,7 @@ it.describe('HW FORM PAGE TYPE', () => {
       })
 
       it.describe('HW FORM TEST PAGE 2', () => {
-        it('Fill all fields', async ({page}) => {
+        it.skip('Fill all fields', async ({page}) => {
             await page.goto("https://demoqa.com/automation-practice-form#google_vignette")
             await page.locator('#firstName').fill('Pitt')
             await page.locator('#lastName').fill('Tod')
