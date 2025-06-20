@@ -33,7 +33,7 @@ jobs:
 
             # 5. Run playwright tests
             - name: Run tests
-              run: npm run formPage
+              run: npm run formPageHeadless
         
 
             
